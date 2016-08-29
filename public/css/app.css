@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    display: none;
+}
+.morecontent span {
+	display: none;
+}
+.morelink {
+	text-decoration:none;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+/* links */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+/* Nav bar Style */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #616161;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ul.topnav li {
+    float: left;
+}
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #000;
+}
+ul.topnav li a:hover {
+    background-color: #616161;
+}
+.active {
+    background-color: #000;
+}
+ul.topnav li.right {
+    float: right;
+}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, ul.topnav li {
+        float: none;
+    }
+}
+
+/* Scroll to top button */
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/up_arrow.png') no-repeat;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}

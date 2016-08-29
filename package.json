@@ -1,18 +1,19 @@
 {
   "name": "crud-app",
   "version": "1.0.0",
-  "description": "A starter repo for the ACA Advanced Course CRUD application.",
+  "description": "Walter Perry's ACA Advanced Web Development CRUD app.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Walter Perry",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "ejs": "^2.5.1",
     "express": "^4.14.0",
+    "method-override": "^2.3.6",
     "mongoose": "^4.5.8"
   },
   "devDependencies": {

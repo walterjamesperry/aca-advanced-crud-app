@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>RANDOM BLOG! by Walter Perry</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../../css/w3.css">
+        <link rel="stylesheet" type="text/css" href="../../css/app.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="w3-light-grey">
+        <!-- Sticky top nav bar -->
+        <ul class="topnav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li class="right">
+                <a href="#">About</a>
+            </li>
+        </ul>
+        <!-- Header -->
+        <header class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center">
+            <h1>RANDOM BLOG!</h1>
+            <p>Welcome to the blog of
+                <span class="w3-tag">Walter Perry</span>
+            </p>
+        </header>
+
+        <!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+        <div class="w3-content" style="max-width:1400px">
+            <!-- About Card on medium screens -->
+            <div class="w3-hide-large w3-hide-small w3-margin-top w3-margin-bottom">
+                <div class="w3-container w3-white w3-padding-32">
+                    <img src="../../images/gaiking.jpg" alt="Me" style="width:150px" class="w3-left w3-round-large w3-margin-right">
+                    <span>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</span>
+                </div>
+            </div>
+            <!-- About Card on small screens -->
+            <div class="w3-hide-large w3-hide-medium w3-margin-top w3-margin-bottom">
+                <img src="../../images/gaiking.jpg" style="width:100%" alt="Me">
+                <div class="w3-container w3-white">
+                    <h4>Walter Perry</h4>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="w3-row">
+
+                <div class="w3-col s12 l8">
+                    <!-- Blog entries -->
+                    <div class="w3-card-4 w3-margin w3-white">
+                        <!-- Blog entry -->
+                        <img src="../../images/img_woods.jpg" alt="Nature" style="width:100%">
+                        <div class="w3-container w3-padding-8">
+                            <h1>
+                                View Single Post
+                            </h1>
+                            <p>
+                                Author:
+                                <%= post.author %>
+                            </p>
+                            <p>
+                                Date:
+                                <%= post.date %>
+                            </p>
+                            <p>
+                                Text:
+                                <%= post.text %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+                <!-- Introduction menu -->
+                <aside class="w3-col l4 w3-hide-medium w3-hide-small">
+                    <!-- About Card -->
+                    <div class="w3-card-2 w3-margin w3-margin-top">
+                        <img src="../../images/gaiking.jpg" style="width:100%" alt="pic decription">
+                        <div class="w3-container w3-white">
+                            <h4>
+                                <b>Walter Perry</b>
+                            </h4>
+                            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <!-- Posts -->
+                    <div class="w3-card-2 w3-margin">
+                        <div class="w3-container w3-padding">
+                            <h4>Social Media Links</h4>
+                        </div>
+                        <ul class="w3-ul w3-hoverable w3-white">
+                            <li class="w3-padding-16">
+                                <img src="../../images/codepen.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Lorem</span><br>
+                                <span>Sed mattis nunc</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="../../images/github.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Ipsum</span><br>
+                                <span>Praes tinci sed</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="../../images/linkedin.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Dorum</span><br>
+                                <span>Ultricies congue</span>
+                            </li>
+                            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                                <img src="../../images/slack.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Mingsum</span><br>
+                                <span>Lorem ipsum dipsum</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr/>
+
+                    <!-- Labels / tags -->
+                    <div class="w3-card-2 w3-margin">
+                        <div class="w3-container w3-padding">
+                            <h4>Tags</h4>
+                        </div>
+                        <div class="w3-container w3-white">
+                            <p>
+                                <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span>
+                                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END Introduction Menu aside -->
+                </aside>
+                <!-- END GRID  div-->
+            </div><br/>
+            <!-- END w3-content div-->
+        </div>
+        <a href="#" class="scrollup">&nbsp;</a>
+        <!-- Footer -->
+        <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+            <p>Powered by Austin Coding Academy</p>
+        </footer>
+        <script>
+            //scroll to top link bottom right corner
+            $(document).ready(function() {
+
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                    } else {
+                        $('.scrollup').fadeOut();
+                    }
+                });
+
+                $('.scrollup').click(function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 600);
+                    return false;
+                });
+
+            });
+        </script>
+        <script>
+            //page fade in animation
+            $(document).ready(function() {
+                $("body").css("display", "none");
+
+                $("body").fadeIn(2000);
+
+                $("a").click(function(event) {
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(1000, redirectPage);
+                });
+
+                function redirectPage() {
+                    window.location = linkLocation;
+                }
+            });
+        </script>
+        <script>
+            //show more or less link for blog post text
+            $(document).ready(function() {
+                var showChar = 100;
+                var ellipsestext = "...";
+                var moretext = "more";
+                var lesstext = "less";
+                $('.more').each(function() {
+                    var content = $(this).html();
+                    if (content.length > showChar) {
+                        var c = content.substr(0, showChar);
+                        var h = content.substr(showChar - 1, content.length - showChar);
+                        var html = c + '<span class="moreelipses">' + ellipsestext + '</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                        $(this).html(html);
+                    }
+                });
+                $(".morelink").click(function() {
+                    if ($(this).hasClass("less")) {
+                        $(this).removeClass("less");
+                        $(this).html(moretext);
+                    } else {
+                        $(this).addClass("less");
+                        $(this).html(lesstext);
+                    }
+                    $(this).parent().prev().toggle();
+                    $(this).prev().toggle();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
